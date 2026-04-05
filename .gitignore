@@ -1,0 +1,71 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# Environment variables
+.env
+
+doc/
+# Streamlit
+.streamlit/secrets.toml
+
+# Vector DB / Chroma DB
+doc_vectorstore/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Python packaging
+*.egg
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# IDEs
+.idea/
+
+# PDF or documents (optional - uncomment if needed)
+# doc/*.pdf
+
+# Ignore large model files if any
+*.bin
+*.pt
+*.pth
+
+# Ignore SQLite / DB files (if used by vector DB)
+*.db
+*.sqlite3
