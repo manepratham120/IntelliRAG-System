@@ -182,7 +182,7 @@ if "pdf_name" not in st.session_state:
     st.session_state.pdf_name = ""
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.markdown("## 📄 RAGnarok AI")
+st.markdown("## 📄 Smart Document QA Engine")
 st.markdown(
     "<p style='color:#5C524A; font-size:0.97rem; margin-top:-0.3rem;'>"
     "RAG Based PDF Question-Answering System. </p>",
