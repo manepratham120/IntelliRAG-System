@@ -6,7 +6,7 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="PDF Q&A Assistant",
+    page_title="Smart Document QA Engine",
     page_icon="📄",
     layout="centered",
 )
@@ -182,12 +182,18 @@ if "pdf_name" not in st.session_state:
     st.session_state.pdf_name = ""
 
 # ── Header ────────────────────────────────────────────────────────────────────
-st.markdown("## 📄 PDF Q&A Assistant")
+st.markdown("## 📄 RAGnarok AI")
+st.markdown(
+    "<p style='color:#5C524A; font-size:0.97rem; margin-top:-0.3rem;'>"
+    "RAG Based PDF Question-Answering System. </p>",
+    unsafe_allow_html=True,
+)
 st.markdown(
     "<p style='color:#5C524A; font-size:0.97rem; margin-top:-0.3rem;'>"
     "Upload any PDF and ask questions about it — in plain English.</p>",
     unsafe_allow_html=True,
 )
+
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
 
 # ── Step 1: Upload ────────────────────────────────────────────────────────────
@@ -195,9 +201,9 @@ st.markdown('<span class="step-pill">Step 1</span>', unsafe_allow_html=True)
 st.markdown('<p class="step-title">Upload your PDF</p>', unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader(
-    label="Upload PDF",
+    label="",
     type=["pdf"],
-    label_visibility="collapsed",
+    label_visibility="hidden",
 )
 
 if uploaded_file is not None:
